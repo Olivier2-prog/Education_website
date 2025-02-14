@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+--primary-color:#001219;
+--secondary-color:rgba(255, 166, 0, 0.784);
+--text-color:#D3D0D3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* Reusable Utilities */
+a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+section{
+    padding: 120px;
+}
+.wrapper{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* end of reusable utilities */
+.header{
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+.logo{
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: .3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+.logo span{
+    color: var(--text-color);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar ul{
+    display: inline-flex;
+    gap: 20px;
+}
+.nav-bar ul a{
+    color: var(--text-color);
+    transition: .3s ease-in-out;
+    font-size: 18px;
+}
+.nav-bar ul a:hover{
+    color: var(--secondary-color);
+}
+.form-search{
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.form-search input[type='search']{
+    background-color: transparent;
+    color: var(--text-color);
+    padding:4px 12px;
+    font-size: 16px;
+    border: none;
+
+}.form-search input[type='search']::placeholder{
+    color: var(--text-color);
+    opacity: .9;
+    transition: .3s ease-in-out;
+}
+.form-search input[type='search']:focus{
+    outline: none;
+    border: none;
+}
+.form-search input[type='search']:focus::placeholder{
+    opacity: 0;
+}
+.search-btn{
+    display: block;
+    border: none;
+    padding: 4px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: .3s ease-in-out;
+    text-transform: capitalize;
+}
+.search-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.nav-bar .fa-bars{
+   display: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
