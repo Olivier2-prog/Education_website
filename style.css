@@ -147,6 +147,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .filter-section button{
     display: block;
@@ -187,6 +188,16 @@ section{
 .header{
     background-color: var(--primary-color);
     padding: 20px 0;
+    transition: position .3s ease-in-out;
+}
+.header.sticky{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.732),rgba(0, 0, 0, 0.711));
+
 }
 .logo{
     font-size: 24px;
