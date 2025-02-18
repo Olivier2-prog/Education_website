@@ -13,6 +13,7 @@ searchBtn.addEventListener('click', function (e) {
 })
 window.addEventListener("scroll", function () {
     navBarList.classList.remove("show-nav");
+    searchInput.classList.remove("toggle-input");
 });
 window.addEventListener('scroll', function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;  
